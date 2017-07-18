@@ -1,0 +1,732 @@
+/* general styles */
+
+*{
+	box-sizing: border-box;
+}
+
+.clearfix {
+	clear: both;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family:
+	font-size: 16px;
+}
+
+main{
+	width: 1366px;
+	margin: 50px auto;
+}
+
+h3 {
+	color: #F7A40D;
+	font-size: 3em;
+	font-family: 'Noticia Text', serif;
+}
+
+span.purpletext {
+	color: #AA1D37;
+}
+
+/*--- Topbar Styles
+--------------------------*/
+
+.topbar{
+	background-color: #F2F2F2;
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+}
+
+.topbar i{
+	color: #FAAD3B;
+	padding: 10px;
+
+}
+
+.topbar i:hover {
+	color: #A01405;
+}
+
+.social-media a{
+	font-size: 2.2em;
+}
+
+.social-media li {
+	display: inline-block;
+}
+
+.topbar i:nth-child(1n){
+	margin: 0 15px;
+}
+
+.search {
+	float: right;
+	border-radius: 20px;
+	border-color: orange;
+	border-style: solid;
+	border-width: 3px;
+	background: whitesmoke; 
+
+}
+
+/*--- Login/ Signup form
+--------------------------*/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid;
+    border-color: #A01405;
+	box-sizing: border-box;
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: orange;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    margin: 5px 80px 0px 40px;      
+    border: 0;
+    cursor: pointer;
+    font-family: 'Didact Gothic', sans-serif;
+	font-size: 25px;
+	line-height: 30px;
+	border-radius: 25px;
+	line-height: 30px;
+	padding: 10px 20px 10px 20px;
+	float: right;
+	text-decoration: none;
+
+
+}
+
+button:hover {
+	background-color: #A01405;
+
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+	padding: 5px 20px 5px 20px;
+	background-color: orange;
+	padding: 10px 20px 10px 20px;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	border-radius: 25px;
+	line-height: 30px;
+    
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: right;
+    padding: 5px 20px 5px 20px;
+	background-color: orange;
+	padding: 10px 20px 10px 20px;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	border-radius: 25px;
+	line-height: 30px;
+	margin-right: 20px;
+   
+}
+
+/* Add padding to container elements */
+
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(255, 227, 186, 0.84);
+    padding-top: 60px;
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: white
+    margin: 5% auto 15% auto;
+    border: 3px solid #A01405;
+    width: 80%; 
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 25px;
+    color: #A01405;
+
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: orange;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #A01405;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+
+input {
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 25px;
+	
+	padding: 0px 30px 10px 20px;
+
+}
+
+input.search {
+	margin: 10px 0px 5px 0px;
+}
+
+.logo {
+	margin: 0 auto;
+	padding: 40px;
+}
+
+.log {
+	height: 650px;
+}
+
+/*--- Navigation Styles
+--------------------------*/
+
+nav{
+	background-color: #A01405;
+	height: 120px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+nav:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav ul{
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li{
+	float: left;
+
+}
+
+nav a{
+	font-family: 'Noticia Text', serif;
+	font-size: 40px;
+	line-height: 120px;
+	text-decoration: none;
+	color: #E6E6E6; /* fallback */
+	color: rgba(230,230,230, 100);
+	padding: 60px;
+	margin: 20px;
+}
+
+nav a:hover{
+	color: #FAAD3B;
+
+}
+
+/*--- Banner Text Styles
+--------------------------*/
+h2 {
+	color: #AA1D37;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 2em;
+
+}
+
+header {
+	background-image: url("../img/banner_.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 1925px;
+}
+
+/*--- Story Styles
+--------------------------*/
+
+.story {
+	height: 600px;
+	background: rgba(237,47,72,0.1)
+
+}
+
+.story h3 {
+	text-align: center;
+}
+
+
+.story {
+	padding: 30px 130px;
+
+}
+
+p.yellow {
+	font-size: 2em;
+	color: #666666;
+	font-family: 'Archivo Narrow', sans-serif;
+	text-align: left;
+	line-height: 40px;
+	
+
+}
+
+.story a {
+	background-color: #A01405;
+	border-radius: 20px;
+	font-size: 25px;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: white;
+	text-decoration: none;
+	padding: 15px 30px 15px 30px;
+	position: relative;
+	line-height: 100px;
+	margin: 0px 450px;
+}
+
+#read:hover {
+	background-color: #FAAD3B;
+}
+
+/*--- Word from CEO Styles
+--------------------------*/
+
+.baddies img{
+	margin-right: 20px;
+	-webkit-filter: grayscale(100%); /* fallback */
+	filter: grayscale(100%);
+	cursor: pointer;
+}
+
+.baddies img:hover{
+	-webkit-filter: grayscale(0); /* fallback */
+	filter: grayscale(0);
+
+}
+
+.contain {
+	background: whitesmoke;
+	height: 734px;
+	margin: 40px 0px 0px 0px;
+}	
+
+.one-half {
+	float: left;
+}
+
+.one-half .lady{
+	margin: 0 90px 0 0;
+}
+
+.word p.grey {
+	font-size: 2em;
+	color: #666666;
+	font-family: 'Archivo Narrow', sans-serif;
+	text-align: left;
+	line-height: 40px;
+	padding: 0px 60px 0px 60px;
+	margin: 0px 0px 10px 20px;
+}
+
+.word h3 {
+	padding: 60px 10px 10px 10px;
+
+}
+
+.word a {
+	background-color: #A01405;
+	border-radius: 20px;
+	font-size: 25px;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: white;
+	text-decoration: none;
+	padding: 15px 30px 15px 30px;
+	line-height: 100px;
+}
+
+.top:hover {
+	background-color: #FAAD3B;
+}
+
+/*--- Orange Block Quote Styles
+--------------------------*/
+
+.across {
+	margin: 50px 0 0 0px;
+}
+
+/*--- Image Hover Styles
+--------------------------*/
+
+.container {
+position: relative;
+width: 33%;
+float: left;
+}
+
+.one-half img {
+-webkit-filter: grayscale(100%); /* fallback */
+filter: grayscale(100%);
+cursor: pointer;
+transition: .5s ease;
+}
+
+.one-half img:hover {
+-webkit-filter: grayscale(0); /* fallback */
+filter: grayscale(0);
+
+}
+
+
+.middle {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%) /* fallback for older browser
+---------- */
+}
+
+.container:hover .image {
+opacity: 0.4;
+}
+.container:hover .middle {
+opacity: 1;
+
+}
+.text {
+background-color: #FAAD3B;
+color: #A01405;
+font-size: 25px;
+padding: 16px;
+font-family: 'Archivo Narrow', sans-serif;
+border-radius: 20px;
+}
+
+/*--- Button Styles
+--------------------------*/
+.Prod a {
+	background-color: #FAAD3B;
+	border-radius: 20px;
+	font-size: 25px;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: white;
+	text-decoration: none;
+	padding: 15px 30px 15px 30px;
+	line-height: 160px;
+}
+
+.Prod a:hover {
+	background-color: #A01405;
+}
+
+.Prod a:nth-child(1n){
+	margin: 0px 35px 0px 0px;
+}
+
+.last {
+	padding: 0px 0px 0px 500px;
+}
+
+.Prod h3 {
+	font-size: 4em;
+}
+
+.specproducts h3 {
+	font-size: 4em;
+}
+
+
+/*--- H4 Styles
+--------------------------*/
+
+h4 {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 40px;
+	color: #FAAD3B;
+	text-align: left;
+	margin: 40px 0px 0px 100px;
+	line-height: 50px;
+}
+
+span.coltext {
+	color: #A01405;
+	font-size: 50px;
+}
+
+/*--- Trusted Brand Styles
+--------------------------*/
+
+.Trusted img:nth-child(1n) {
+	margin: 0 20px;
+}
+
+div.brands{
+	background-color: rgba(250, 173, 59, 0.54);
+	padding: 25px;
+
+}
+
+.Trusted h3 {
+	font-size: 4em;
+}
+
+
+/*--Footer section
+-------------------------- */
+.contain {
+	width: 1366px;
+	margin: 0 auto;
+}
+
+footer{
+	width: 100%;
+	background: rgba(255, 227, 186, 0.64);
+	text-align: center;
+	margin-top: 80px;
+}
+
+footer h3{
+	margin-top: 50px;
+}
+
+footer article{
+	width: 643px;
+	float: left;
+
+}
+
+footer article:first-child {
+	margin-right: 100px;
+}
+
+footer article iframe{
+	width: 100%;
+	height: 335px;
+	border-radius: 20px;
+	float: left;
+}
+footer ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font size: 35px;
+
+}
+
+/*--Form Section
+-------------------------- */
+
+form {
+	width:300px;
+	margin: 0px 0px 60px 600px;
+
+}
+
+footer h3 {
+	font-size: 4em;
+}
+
+footer form{
+	width: 100%;
+
+}
+
+footer article input {
+	width: 100%;
+	display: block;
+	text-align: left;
+	border-radius: 10px;
+	border-color: #A01405;
+	border-style: solid;
+	border-width: 3px;
+	margin-bottom: 15px;
+	padding: 20px;
+	font-size: 35px;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: #A01405; 
+}
+
+input[type="text"] {
+	border-color: #A01405;
+	border-style: solid;
+	border-width: 3px;
+
+}
+
+input[type="submit"] {
+	width: 20%;
+	background-color: #A01405;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: white;
+	font-size: 30px;
+	line-height: 16px;
+	margin: 0px 0px 0px 510px;
+
+	}
+
+input[type="submit"]:hover{
+	background-color: #FAAD3B;
+	border-color: transparent;
+}
+
+footer select {
+	width: 100%;
+	display: block;
+	text-align: left;
+	border-radius: 5px;
+	border-color: #A01405;
+	margin-bottom: 15px;
+	border-style: solid;
+	border-width: 3px;
+	padding: 20px;
+	font-size: 30px;
+	font-family: 'Archivo Narrow', sans-serif;
+
+}
+
+footer article textarea{
+	width: 100%;
+	display: block;
+	text-align: center;
+	height: 200px;
+	margin: 15px 0;
+	padding: 10px;
+	font-size: 17px;
+	border-radius: 10px;
+	border-color: #A01405;
+	border-style: solid;
+	border-width: 3px;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 35px;
+}
+
+input{
+	background-color: white;
+
+}
+
+footer select {
+	font-size: 35px;
+	color: #A01405;
+}
+
+article iframe{
+	margin: 20px 20px 20px 650px;
+
+	
+}
+
+footer article iframe {
+	border-radius: 50%;
+	width: 115%;
+	border-style: solid;
+	border-color: #A01405;
+	border-width: 6px;
+	height: 700px;
+}
+
+/* Contact */
+
+.contact i{
+	margin-right: 20px;
+	color: #A01405;
+	text-decoration: none;
+}
+
+
+.contact i:hover{
+	color: #FAAD3B;
+}
+
+.contact a{
+	text-decoration: none;
+	font-size: 2em;
+	font-family: 'Archivo Narrow', sans-serif;
+	color: grey;
+	float: left;
+	margin-bottom: 100px;
+}
+
+s
+
+.contact a:nth-child(2n) {
+ 	margin: 0 50px;
+}
+
+.contact{
+ 	padding: 10px 0px 0px 450px;
+
+}
+
+footer h3 {
+ 	padding: 50px 0px 0px 0px;
+ 	font-size: 4em;
+}
+
+.canalwalk {
+		background-color:  #FAAD3B;
+		padding: 30px 30px 30px 30px;
+}
+
+.canalwalk a:nth-child(2n){
+		margin: 20px 50px 20px 20px;
+
+}
+
+.copy{
+	color: white;
+	padding: 30px 30px 30px 30px;
+	background-color: #A01405;
+	font-size: 30px;
+	font-family: 'Archivo Narrow', sans-serif;
+
+}
